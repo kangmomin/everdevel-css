@@ -1,0 +1,63 @@
+p:only-child {
+    color: red;
+    /* 오직 p element만 있을 경우 */
+}
+
+p:only-of-type {
+    color: pink;
+    /* 다른 태그는 있어도 되지만 p태그는 하나만 있어야 함 */
+}
+
+p[id="s"] {
+    color: white;
+    /* 
+    태그[속성]
+    ^="a" == a로 시작하는
+    $="a" == a로 끝나는
+    *="a" == a가 포함된
+    */
+}
+
+p {
+    font-weight: 300;
+    /* font 굵기 */
+
+    letter-spacing: normal;
+    /* 글자 간격 */
+    word-spacing: 10px;
+    /* 띄어쓰기 간격 */
+    
+    line-height: 10px;
+    /* 글자간 위 아래 간격 */
+    text-decoration: dashed;
+    /* text에 줄 긋기 */
+    direction: ltr;
+    /* element의 시작 위치 */
+
+    text-indent: 10px;
+    /* 들여쓰기 */
+    text-shadow: 10px 10px 10px black;
+    /* 그림자 설정 가로 세로 흐린정도 색상 */
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    /* text를 대문자 소문자 띄어씌기 다음 첫글자를 대문자로 */
+    
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    white-space: none;
+    /* 
+    html의 pre태그 
+    wrap inline에 맞춰 자동 줄바꿈
+    line 공백을 1개로 통일하고 inline에 맞춰 자동 줄바꿈
+    무지성
+    */
+    background-repeat: no-repeat;
+    /* background image 사용시 남는 공간에서 image가 반복하여 적용하는걸 방지. */
+    background-position: center center;
+    /* background image의 위치 설정. 커스텀 단위로 사용 가능 */
+    background-attachment: scroll;
+    /* 스크롤시 background-image가 함께 움직임 */
+    /* fixed는 움직이지 않음 */
+}
