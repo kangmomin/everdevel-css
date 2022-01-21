@@ -60,4 +60,45 @@ p {
     background-attachment: scroll;
     /* 스크롤시 background-image가 함께 움직임 */
     /* fixed는 움직이지 않음 */
+    background: linear-gradient(white, blue);
+    /* gradient start end liner = 일자 radial = 중심으로 */
+    
+    box-shadow: 10px 10px inset black;
+    /* 가로 세로 효과 색상 */
+    
+    visibility: hidden;
+    /* hidden inherit visible */
+    /* display none은 레이아웃에 영향을 미치지 않으나 visibility는 영향을 미침 */
+    
+    outline: none;
+    /* input의 아웃라인은 border와는 다른 css로 이루어져 있음 */
+    
+    float: left;
+    /* tag를 inline으로 바꾸고 흐름을 제어함 */
+
+    /* animation */
+}
+p { animation: move 3s 1 }
+/* keyframs-name time repeat time */
+
+@keyframes move {
+    from {
+        margin: 10px;
+    } to {
+        margin: 0px
+    }
+}
+/* 
+    from {}
+    10% {}
+    20% {}
+    to {}
+    로 사용도 가능함
+*/
+
+p {
+    transform: scale(5); 
+    transform: rotateX(50deg); 
+    transform: skew(10deg, 10deg); 
+    /* 확대(*) 각도기울임(x, y) 조정 */
 }
