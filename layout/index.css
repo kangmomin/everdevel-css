@@ -1,7 +1,25 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 10px;
 }
+
+/* media query */
+@media screen and (min-width: 850px) and (max-width: 1050px) {
+    * { font-size: 8px; }
+}
+@media screen and (min-width: 650px) and (max-width: 849px) {
+    * { font-size: 6px; }
+}
+@media screen and (min-width: 450px) and (max-width: 649px) {
+    * { font-size: 4px; }
+}
+@media screen and (min-width: 250px) and (max-width: 449px) {
+    * { font-size: 2px; }
+}
+/* media query */
+
+/* init */
 html, 
 body,
 #wrap{
@@ -9,66 +27,85 @@ body,
     display: flex;
     flex-direction: column;
 }
+/* init */
 
+/* ===== gnb ===== */
 #gnb {
     display: flex;
     background-color: rgb(211, 211, 211);
     justify-content: center;
 }
-
+/* === gnb item === */
 #gnb > ul { display: flex; }
 #gnb > ul > li { 
+    font-size: 1.5rem;
     list-style: none;
-    padding: 10px;
+    padding: 1rem;
 }
+/* ===== gnb ===== */
 
+/* ===== header ===== */
 header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
+/* === Hello World === */
 header > h1 {
     margin: 0 auto;
-    font-size: 50px;
+    font-size: 5rem;
     color: rgb(0, 255, 0);
 }
+/* === Hello World === */
 
+/* === bar under header === */
 header > #menu {
     margin: 0 auto;
-    width: 1000px;
-    height: 50px;
+    width: 100rem;
+    height: 5rem;
     background-color: rgb(0, 255, 0);
 }
+/* ===== bar under header ===== */
 
+/* ===== content's area ===== */
 #container {
     display: flex;
-    width: 1000px;
+    width: 100rem;
     margin: 0 auto;
 }
+/* ===== content's area ===== */
 
+/* ===== main content's ===== */
 #mainContent > .content {
-    width: 650px;
-    height: 200px;
+    width: 65rem;
+    height: 20rem;
     background-color: rgb(231, 231, 231);
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
+/* ===== main content's ===== */
 
-#subContent { margin-left: 20px; }
+/* ===== sub content's area ===== */
+#subContent { margin-left: 2rem; }
+/* ===== sub content's area ===== */
 
+/* ===== sub content's ===== */
 #subContent > .content {
-    margin-bottom: 10px;
-    width: 330px;
-    height: 140px;
+    margin-bottom: 1rem;
+    width: 33rem;
+    height: 14rem;
     background-color: rgb(241, 241, 241);
 }
+/* ===== sub content's ===== */
 
+/* footer */
 footer {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
-    height: 30px;
+    width: 100rem;
+    height: 3rem;
     background-color: rgb(0, 255, 0);
 }
+/* footer */
